@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Codabapp</string>
+    <string name="pedidos">Pedidos</string>
+    <string name="tienda">Tienda</string>
+    <string name="clientes">Clientes</string>
+    <string name="clientes_favoritos">♡ Clientes favoritos</string>
+    <string name="crear_pedido">Crear pedido...</string>
+    <string name="microphone">Microphone</string>
+    <string name="edit">Edit</string>
+</resources>
