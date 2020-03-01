@@ -41,11 +41,11 @@ class MainActivity : AppCompatActivity() {
     }
     private fun initRecycleView(){
         recycler_view.apply {
-            recycler_view.layoutManager= LinearLayoutManager(this@MainActivity)
+//            recycler_view.layoutManager= LinearLayoutManager(this@MainActivity)
             val topSpacingItemsDecoration= TopSpacingItemsDecoration(20)
-            addItemDecoration(topSpacingItemsDecoration)
+//            addItemDecoration(topSpacingItemsDecoration)
             listAdapter = UserListRecycle()
-            adapter = listAdapter
+//            adapter = listAdapter
         }
     }
 
