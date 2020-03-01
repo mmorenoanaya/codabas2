@@ -3,23 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_pedidos">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.codabapp.ui.home.HomeFragment"
+        android:id="@+id/navigation_pedidos"
+        android:name="com.example.codabapp.ui.pedidos.PedidosFragment"
         android:label="@string/pedidos"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_pedidos" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.codabapp.ui.dashboard.DashboardFragment"
+        android:id="@+id/navigation_detalle_pedido"
+        android:name="com.example.codabapp.ui.pedidos.DetallePedidoFragment"
+        android:label="DetallePedidos"
+        tools:layout="@layout/fragment_detalle_pedido"/>
+
+    <fragment
+        android:id="@+id/navigation_tienda"
+        android:name="com.example.codabapp.ui.tienda.TiendaFragment"
         android:label="@string/tienda"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_tienda" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.codabapp.ui.notifications.NotificationsFragment"
+        android:id="@+id/navigation_clientes"
+        android:name="com.example.codabapp.ui.clientes.ClientesFragment"
         android:label="@string/clientes"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_clientes" />
 </navigation>

@@ -7,4 +7,12 @@
     <string name="crear_pedido">Crear pedido...</string>
     <string name="microphone">Microphone</string>
     <string name="edit">Edit</string>
+    <string name="detalle_pedido">Detalle de pedido</string>
+    <string name="ramon">Ramon Valdez</string>
+    <string name="descripcionpedido" > Pedido para las 12:00 pm de hoy</string>
+    <string name="estadopedido" >Estado del pedido</string>
+    <string name="pedidos_curso" >Pedidos en curso</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

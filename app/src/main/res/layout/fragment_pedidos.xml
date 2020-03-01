@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:elevation="0dp"
+    tools:context=".ui.pedidos.PedidosFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/barraBusquedaRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/crearPedido"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/mybutton"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:shadowColor="#989898"
+                    android:text="@string/crear_pedido"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorBackground" />
+
+                <ImageButton
+                    android:id="@+id/microphone"
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/mybutton"
+                    android:contentDescription="@string/microphone"
+                    android:cropToPadding="false"
+                    android:src="@drawable/ic_mic_black_24dp" />
+
+                <ImageButton
+                    android:id="@+id/book"
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/mybutton"
+                    android:contentDescription="@string/edit"
+                    android:cropToPadding="false"
+                    android:src="@drawable/ic_book_black_24dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/DetallePedidoRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/DetallePedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/clientes_favoritos"
+                    android:textColor="@color/subtitleTextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/tienda2"
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/mybutton"
+                    android:clickable="true"
+                    android:contentDescription="@string/tienda"
+                    android:contextClickable="true"
+                    android:cropToPadding="false"
+                    android:longClickable="true"
+                    android:src="@drawable/ic_store_mall_directory_blue_24dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorForeground">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/imageButton15"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:adjustViewBounds="false"
+
+                    android:background="@drawable/rounded_button"
+                    android:src="@drawable/iconman"
+                    tools:layout_editor_absoluteX="299dp"
+                    tools:layout_editor_absoluteY="132dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton10"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:adjustViewBounds="false"
+
+                    android:background="@drawable/rounded_button"
+                    android:src="@drawable/iconman"
+                    tools:layout_editor_absoluteX="299dp"
+                    tools:layout_editor_absoluteY="132dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton11"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:adjustViewBounds="false"
+
+                    android:background="@drawable/rounded_button"
+                    android:src="@drawable/iconman"
+                    tools:layout_editor_absoluteX="299dp"
+                    tools:layout_editor_absoluteY="132dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton12"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:adjustViewBounds="false"
+
+                    android:background="@drawable/rounded_button"
+                    android:src="@drawable/iconman"
+                    tools:layout_editor_absoluteX="299dp"
+                    tools:layout_editor_absoluteY="132dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="0dp"
+
+
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/rounded_button"
+                    android:src="@drawable/iconman"
+                    tools:layout_editor_absoluteX="299dp"
+                    tools:layout_editor_absoluteY="132dp" />
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
