@@ -8,197 +8,266 @@
     android:elevation="0dp"
     tools:context=".ui.pedidos.PedidosFragment">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TableRow
-                android:id="@+id/barraBusquedaRow"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <Button
-                    android:id="@+id/crearPedido"
-                    android:layout_width="205dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp"
-                    android:background="@drawable/mybutton"
-                    android:paddingLeft="8dp"
-                    android:paddingRight="8dp"
-                    android:shadowColor="#989898"
-                    android:text="@string/crear_pedido"
-                    android:textAlignment="textStart"
-                    android:textColor="@color/colorBackground" />
-
-                <ImageButton
-                    android:id="@+id/microphone"
-                    android:layout_width="47dp"
-                    android:layout_height="match_parent"
-                    android:adjustViewBounds="false"
-                    android:background="@drawable/mybutton"
-                    android:contentDescription="@string/microphone"
-                    android:cropToPadding="false"
-                    android:src="@drawable/ic_mic_black_24dp" />
-
-                <ImageButton
-                    android:id="@+id/book"
-                    android:layout_width="47dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="20dp"
-                    android:adjustViewBounds="false"
-                    android:background="@drawable/mybutton"
-                    android:contentDescription="@string/edit"
-                    android:cropToPadding="false"
-                    android:src="@drawable/ic_book_black_24dp" />
-
-            </TableRow>
-
-            <TableRow
-                android:id="@+id/DetallePedidoRow"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:id="@+id/DetallePedido"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="@string/clientes_favoritos"
-                    android:textColor="@color/subtitleTextColor"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <Space
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <ImageButton
-                    android:id="@+id/tienda2"
-                    android:layout_width="47dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="20dp"
-                    android:adjustViewBounds="false"
-                    android:background="@drawable/mybutton"
-                    android:clickable="true"
-                    android:contentDescription="@string/tienda"
-                    android:contextClickable="true"
-                    android:cropToPadding="false"
-                    android:longClickable="true"
-                    android:src="@drawable/ic_store_mall_directory_blue_24dp" />
-
-            </TableRow>
-
-        </TableLayout>
-
-        <HorizontalScrollView
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/clientes_favoritos"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorForeground">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
-
-
-                <ImageButton
-                    android:id="@+id/imageButton15"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:adjustViewBounds="false"
-
-                    android:background="@drawable/rounded_button"
-                    android:src="@drawable/iconman"
-                    tools:layout_editor_absoluteX="299dp"
-                    tools:layout_editor_absoluteY="132dp" />
-
-                <ImageButton
-                    android:id="@+id/imageButton10"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:adjustViewBounds="false"
-
-                    android:background="@drawable/rounded_button"
-                    android:src="@drawable/iconman"
-                    tools:layout_editor_absoluteX="299dp"
-                    tools:layout_editor_absoluteY="132dp" />
-
-                <ImageButton
-                    android:id="@+id/imageButton11"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:adjustViewBounds="false"
-
-                    android:background="@drawable/rounded_button"
-                    android:src="@drawable/iconman"
-                    tools:layout_editor_absoluteX="299dp"
-                    tools:layout_editor_absoluteY="132dp" />
-
-                <ImageButton
-                    android:id="@+id/imageButton12"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:adjustViewBounds="false"
-
-                    android:background="@drawable/rounded_button"
-                    android:src="@drawable/iconman"
-                    tools:layout_editor_absoluteX="299dp"
-                    tools:layout_editor_absoluteY="132dp" />
-
-                <ImageButton
-                    android:id="@+id/imageButton2"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="0dp"
-
-
-                    android:adjustViewBounds="true"
-                    android:background="@drawable/rounded_button"
-                    android:src="@drawable/iconman"
-                    tools:layout_editor_absoluteX="299dp"
-                    tools:layout_editor_absoluteY="132dp" />
-
-
-            </LinearLayout>
-        </HorizontalScrollView>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_favorite_border_black_24dp"
+            android:text="@string/clientes_favoritos"
+            android:textColor="@color/subtitleTextColor"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.116"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/crear_pedido"
+            app:layout_constraintVertical_bias="0.428" />
+
+        <ImageButton
+            android:id="@+id/tienda"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/mybutton"
+            android:contentDescription="@string/tienda"
+            android:src="@drawable/ic_store_mall_directory_blue_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.846"
+            app:layout_constraintStart_toEndOf="@+id/clientes_favoritos"
+            app:layout_constraintTop_toBottomOf="@+id/editar"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/crear_pedido"
+            android:layout_width="190dp"
+            android:layout_height="47dp"
+            android:background="@drawable/mybutton"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/crear_pedido"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.128"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.188" />
 
-    </LinearLayout>
+        <ImageButton
+            android:id="@+id/microfono"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/mybutton"
+            android:contentDescription="@string/microphone"
+            android:src="@drawable/ic_mic_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/crear_pedido"
+            app:layout_constraintEnd_toStartOf="@+id/editar"
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintStart_toEndOf="@+id/crear_pedido"
+            app:layout_constraintTop_toTopOf="@+id/crear_pedido"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/editar"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:background="@drawable/mybutton"
+            android:contentDescription="@string/edit"
+            android:src="@drawable/ic_book_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/microfono"
+            app:layout_constraintEnd_toEndOf="@+id/tienda"
+            app:layout_constraintStart_toStartOf="@+id/tienda"
+            app:layout_constraintTop_toTopOf="@+id/microfono" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_clientes_favoritos"
+        android:layout_width="344dp"
+        android:layout_height="77dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.001">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@color/colorBackground"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_girl" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@color/colorBackground"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_man_2" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@color/colorBackground"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_student" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@color/colorBackground"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_man" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@color/colorBackground"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_man_4" />
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@color/colorBackground"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_girl_2" />
+
+            <ImageButton
+                android:id="@+id/imageButton10"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@color/colorBackground"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_student" />
+
+            <ImageButton
+                android:id="@+id/imageButton11"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@color/colorBackground"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_man" />
+
+            <ImageButton
+                android:id="@+id/imageButton12"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@color/colorBackground"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_man_2" />
+
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@color/colorBackground"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_student" />
+
+            <ImageButton
+                android:id="@+id/imageButton14"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@color/colorBackground"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_girl" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/pedidos_en_curso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_list_black_24dp"
+        android:text="@string/pedidos_curso"
+        android:textColor="@color/subtitleTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll_clientes_favoritos"
+        app:layout_constraintVertical_bias="0.038" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

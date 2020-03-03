@@ -37,15 +37,16 @@ class MainActivity : AppCompatActivity() {
 
     private fun addDataSet(){
         val data = DataSource.createDataSet()
-        listAdapter.submitList(data)
+        //listAdapter.submitList(data)
     }
     private fun initRecycleView(){
-        recycler_view.apply {
-//            recycler_view.layoutManager= LinearLayoutManager(this@MainActivity)
+        //recycler_view.apply
+        {
+      //      recycler_view.layoutManager= LinearLayoutManager(this@MainActivity)
             val topSpacingItemsDecoration= TopSpacingItemsDecoration(20)
 //            addItemDecoration(topSpacingItemsDecoration)
             listAdapter = UserListRecycle()
-//            adapter = listAdapter
+        //    adapter = listAdapter
         }
     }
 
