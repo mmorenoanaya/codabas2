@@ -39,6 +39,8 @@ class DetallePedidoFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_detalle_pedido, container, false)
     }
 
+
+
     companion object {
         /**
          * Use this factory method to create a new instance of
