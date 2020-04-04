@@ -6,4 +6,5 @@
     <color name="colorBackground">#EDEDED</color>
     <color name="colorForeground">#FFFFFF</color>
     <color name="subtitleTextColor">#455068</color>
+    <color name="amarillo">#FEC31D</color>
 </resources>
